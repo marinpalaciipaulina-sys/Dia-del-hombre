@@ -2,8 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Favicon Corazón Dorado -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f4c542'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Un regalo especial para José - Oso Polar">
     <title>Para mi Oso Polar</title>
@@ -44,7 +42,6 @@
     
     <!-- Welcome Screen -->
     <section id="welcome-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-welcome">
-        <div class="aurora-glow"></div>
         <canvas id="confetti-canvas" class="absolute inset-0 pointer-events-none"></canvas>
         
         <div class="text-center px-6 max-w-2xl relative z-10">
@@ -76,50 +73,16 @@
         <!-- Hero Section -->
         <section class="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
             <div class="hero-bg-pattern absolute inset-0"></div>
+            <div class="hero-gradient-overlay absolute inset-0"></div>
             
-            <div class="relative z-10 text-center px-6 w-full flex items-center justify-center">
-                
-                <!-- Contenedor del Corazón Pulido -->
-                <div class="heart-container opacity-0" data-reveal="scale" data-delay="200">
-                    <div class="animated-heart">
-                        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <defs>
-                                <!-- Sombra dorada exterior -->
-                                <filter id="glow-heart" x="-50%" y="-50%" width="200%" height="200%">
-                                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-                                    <feMerge>
-                                        <feMergeNode in="coloredBlur"/>
-                                        <feMergeNode in="SourceGraphic"/>
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                            
-                            <!-- Corazón de curvas suaves y perfectas -->
-                            <!-- stroke-width="1" para línea fina -->
-                            <path class="heart-path" 
-                                  d="M 50 88 
-                                     C 20 60 5 40 5 25 
-                                     C 5 10 18 0 35 0 
-                                     C 45 0 50 10 50 10 
-                                     C 50 10 55 0 65 0 
-                                     C 82 0 95 10 95 25 
-                                     C 95 40 80 60 50 88 Z"
-                                  
-                                  fill="#162544" 
-                                  stroke="#f4c542" 
-                                  stroke-width="1" 
-                                  vector-effect="non-scaling-stroke"
-                                  filter="url(#glow-heart)"/>
-                        </svg>
-                        
-                        <!-- Texto DENTRO del corazón -->
-                        <div class="heart-text">
-                            <h2 class="font-display text-3xl md:text-5xl lg:text-6xl font-light tracking-wide" style="color: var(--polar-accent);">
-                                José, mi oso polar
-                            </h2>
-                        </div>
-                    </div>
-                </div>
+            <div class="relative z-10 text-center px-6 max-w-3xl">
+                <p class="hero-subtitle text-polar-accent font-medium tracking-widest uppercase text-sm mb-4 opacity-0" data-reveal="up">Para ti con amor</p>
+                <h2 class="hero-title font-display text-5xl md:text-7xl font-light mb-8 text-polar-cream opacity-0" data-reveal="up" data-delay="200">
+                    Jose, mi oso polar
+                </h2>
+                <p class="hero-text text-lg md:text-xl text-polar-cream/70 max-w-xl mx-auto font-light leading-relaxed opacity-0" data-reveal="up" data-delay="400">
+                    Hoy quiero recordarte todo lo que significas para mi, con cada palabra, cada imagen, cada detalle de este regalo.
+                </p>
             </div>
             
             <!-- Scroll indicator -->
@@ -179,30 +142,17 @@
         </section>
         
         <!-- Gallery Section -->
-        <section class="py-28 px-6 relative overflow-hidden">
-            <!-- Fondo decorativo sutil -->
-            <div class="absolute inset-0 bg-gradient-to-b from-polar-dark via-polar-navy/30 to-polar-dark pointer-events-none"></div>
+        <section class="py-24 px-6 bg-polar-navy/30 relative">
+            <div class="absolute inset-0 gallery-pattern opacity-5"></div>
             
             <div class="max-w-6xl mx-auto relative z-10">
-                
-                <!-- Encabezado Decorativo Mejorado -->
-                <div class="text-center mb-16 opacity-0" data-reveal="up">
-                    <div class="flex items-center justify-center gap-4 mb-6">
-                        <span class="w-16 h-px bg-gradient-to-r from-transparent to-polar-accent/50"></span>
-                        <svg class="w-8 h-8 text-polar-accent opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                        <span class="w-16 h-px bg-gradient-to-l from-transparent to-polar-accent/50"></span>
-                    </div>
-                    <h2 class="font-display text-4xl md:text-5xl font-light text-polar-cream mb-4 tracking-wide">
-                        Nuestros Momentos
-                    </h2>
-                    <p class="text-polar-cream/50 text-sm uppercase tracking-[0.3em]">Galería de recuerdos</p>
+                <div class="text-center mb-16">
+                    <p class="text-polar-accent font-medium tracking-widest uppercase text-sm mb-4 opacity-0" data-reveal="up">Galeria</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-light text-polar-cream opacity-0" data-reveal="up" data-delay="100">Amor es...</h2>
                 </div>
-
-                <!-- Grid de Galería -->
-                <div id="gallery-grid">
-                    <!-- Las fichas se generan aquí automáticamente -->
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" id="gallery-grid">
+                    <!-- Gallery items will be generated by JS -->
                 </div>
             </div>
         </section>
