@@ -97,7 +97,7 @@ def obtener_galeria():
             'id': i,
             # Flask sirve archivos en static automáticamente en la ruta /static/
             # Nota: Flask maneja los espacios en los nombres de archivo automáticamente
-            'imagen': f'/static/images/Love is {i}.png', 
+            'imagen': f'/static/images/love{i}.png', 
             'mensaje': mensajes[i-1]
         })
         

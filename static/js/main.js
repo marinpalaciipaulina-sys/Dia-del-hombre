@@ -44,14 +44,14 @@
         ],
         mensajeSecreto: "Oso polar... si algún día dudas de lo mucho que te amo, vuelve aquí. Porque todo esto lo hice pensando en ti, en lo que eres para mí y en lo feliz que me haces. Eres mi presente bonito y mi futuro deseado.",
         galeria: [
-            { id: 1, imagen: '/static/images/Love is 1.png', mensaje: 'Amor es reír contigo sin razón.' },
-            { id: 2, imagen: '/static/images/Love is 2.png', mensaje: 'Amor es elegirte todos los días.' },
-            { id: 3, imagen: '/static/images/Love is 3.png', mensaje: 'Amor es sentir paz cuando estás conmigo.' },
-            { id: 4, imagen: '/static/images/Love is 4.png', mensaje: 'Amor es tenerte como mi lugar seguro.' },
-            { id: 5, imagen: '/static/images/Love is 5.png', mensaje: 'Amor es cada momento a tu lado.' },
-            { id: 6, imagen: '/static/images/Love is 6.png', mensaje: 'Amor es tu abrazo, mi refugio favorito.' },
-            { id: 7, imagen: '/static/images/Love is 7.png', mensaje: 'Amor es mirarte y saber que todo estará bien.' },
-            { id: 8, imagen: '/static/images/Love is 8.png', mensaje: 'Amor es construir un mundo solo para dos.' }
+            { id: 1, imagen: '/static/images/love1.png', mensaje: 'Amor es reír contigo sin razón.' },
+            { id: 2, imagen: '/static/images/love2.png', mensaje: 'Amor es elegirte todos los días.' },
+            { id: 3, imagen: '/static/images/love3.png', mensaje: 'Amor es sentir paz cuando estás conmigo.' },
+            { id: 4, imagen: '/static/images/love4.png', mensaje: 'Amor es tenerte como mi lugar seguro.' },
+            { id: 5, imagen: '/static/images/love5.png', mensaje: 'Amor es cada momento a tu lado.' },
+            { id: 6, imagen: '/static/images/love6.png', mensaje: 'Amor es tu abrazo, mi refugio favorito.' },
+            { id: 7, imagen: '/static/images/love7.png', mensaje: 'Amor es mirarte y saber que todo estará bien.' },
+            { id: 8, imagen: '/static/images/love8.png', mensaje: 'Amor es construir un mundo solo para dos.' }
         ]
     };
 
